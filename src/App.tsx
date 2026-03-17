@@ -1,0 +1,23 @@
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Skills from "./components/Skills";
+import Projects from "./components/Projects";
+import Resume from "./components/Resume"
+import About from "./components/About";
+import Footer from "./components/Footer";
+
+function App() {
+  return (
+    <div>
+      <Navbar />
+      <Hero />
+      <Skills />
+      <Projects />
+      <Resume />
+      <About />
+      <Footer />
+    </div>
+  );
+}
+
+export default App;
