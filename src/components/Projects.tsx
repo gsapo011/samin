@@ -13,7 +13,7 @@ const projects = [
     title: "Portfolio",
     description: "My developer portfolio built with React + TypeScript.",
     github: "https://github.com/gsapo011/samin",
-    link: "https://github.com/gsapo011/samin",
+    link: "https://sami-gilt.vercel.app",
   },
 ];
 
