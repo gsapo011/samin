@@ -6,7 +6,7 @@ A personal portfolio website built with **React** and **TypeScript**, showcasing
 
 ## Live Demo
 
-[View the live site here](https://url.com)
+[View the live site here](https://sami-gilt.vercel.app)
 
 ---
 
