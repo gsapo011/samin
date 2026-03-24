@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { FiMenu, FiX } from "react-icons/fi"; // Hamburger & close icons
 
 // Navigation sections: id corresponds to section element id, label is the button text
 const sections = [
@@ -6,18 +7,19 @@ const sections = [
   { id: "skills", label: "Skills" },
   { id: "projects", label: "Projects" },
   { id: "resume", label: "Resume" },
-  { id: "about-me", label: "About/Contact" }
+  { id: "about-me", label: "About/Contact" },
 ];
 
 const Navbar: React.FC = () => {
   // State to track which section is currently active
   const [activeSection, setActiveSection] = useState("home");
+  const [menuOpen, setMenuOpen] = useState(false); // MOBILE menu toggle
 
   useEffect(() => {
     const handleScroll = () => {
       let currentSection = "home";
 
-      // Get the navbar height to account for fixed navbar offset
+      // For the navbar height to account for fixed navbar offset
       const navbarHeight = document.querySelector(".navbar")?.clientHeight || 0;
 
       sections.forEach(({ id }, index) => {
@@ -55,19 +57,25 @@ const Navbar: React.FC = () => {
   const handleClick = (id: string) => {
     const section = document.getElementById(id);
     if (section) {
-      const navbarHeight = document.querySelector(".navbar")?.clientHeight || 0;
-      const sectionTop = section.offsetTop - navbarHeight; // Account for fixed navbar
-      window.scrollTo({ top: sectionTop, behavior: "smooth" });
+      window.scrollTo({ top: section.offsetTop, behavior: "smooth" });
 
-      // Immediately set active section for click
+      // set active section for click
       setActiveSection(id);
+
+      // close MOBILE menu after clicking a link
+      setMenuOpen(false);
     }
   };
 
   return (
-    // Section element id for styling
     <nav className="navbar">
-      <ul className="nav-list">
+      {/* hamburger menu toggle for MOBILE */}
+      <div className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
+        {menuOpen ? <FiX /> : <FiMenu />}
+      </div>
+
+      {/* nav-list: apply "open" class when MOBILE menu is open */}
+      <ul className={`nav-list ${menuOpen ? "open" : ""}`}>
         {sections.map(({ id, label }) => (
           <li key={id}>
             <button
