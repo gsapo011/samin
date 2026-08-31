@@ -32,6 +32,10 @@ A personal portfolio website built with **React** and **TypeScript**, showcasing
 
 ## Contact
 
-Email: samipoyhonen88(at)gmail.com
+Sami Pöyhönen
+
+GitHub: gsapo011
+
+Email: samipoyhonen88(at)gmail.com / gsapo011@edu.xamk.fi
 
 ---
