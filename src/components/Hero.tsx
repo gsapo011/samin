@@ -11,7 +11,7 @@ export default function Hero() {
       }}
     >
       <h1>Sami Pöyhönen</h1>
-      <h2>Software Developer | Business Information Technology Student</h2>
+      <h2>Software Developer | Testing & Test Automation | Business Information Technology Student</h2>
     </section>
   );
 }
