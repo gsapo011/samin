@@ -15,7 +15,7 @@ interface WorkItem {
 // Education data array
 const educationData: EducationItem[] = [
   {
-    year: "2024 -",
+    year: "2024 - Present",
     description:
       "Bachelor of Business Administration, Business Information Technology, South-Eastern Finland University of Applied Sciences",
   },
@@ -36,11 +36,11 @@ const educationData: EducationItem[] = [
 // Work experience data array
 const workExperienceData: WorkItem[] = [
     {
-    year: "2026 - ",
+    year: "2026 - Present",
     company: "Psyche's Royale Gaming",
     role: "Software Tester",
     details: "Perform manual testing of games, applications, and websites to identify bugs, verify functionality, and ensure quality across different platforms. Conduct automated testing and develop test automation to improve testing efficiency and reliability. Work with production systems to investigate issues, validate functionality, and support software quality assurance. Apply analytical, problem-solving, and technical skills through hands-on experience in both manual and automated testing.",
-  }
+  },
   {
     year: "2018 - 2024",
     company: "Finnchat Oy / Humm Oy",
