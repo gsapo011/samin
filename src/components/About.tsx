@@ -37,7 +37,7 @@ export default function About() {
           {/* Links and styles for email, GitHub & LinkedIn */}
           <a href="mailto:samipoyhonen88@email.com" className="mini-btn" target="_blank"><MdEmail />Email</a> |{" "}
           <a href="https://github.com/gsapo011" className="mini-btn" target="_blank"><FaGithub /> GitHub</a> |{" "}
-          <a href="https://www.linkedin.com/in/sami-pöyhönen/" className="mini-btn" target="_blank"><FaLinkedin />LinkedIn</a>
+          <a href="https://www.linkedin.com/in/samipoyhonen/" className="mini-btn" target="_blank"><FaLinkedin />LinkedIn</a>
         </p>
       </div>
     </section>
