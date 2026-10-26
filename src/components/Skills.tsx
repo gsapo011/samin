@@ -9,7 +9,9 @@ const skills = [
   "Git",
   "Linux",
   "WordPress",
-  "Robot Framework"
+  "Robot Framework",
+  "Postman",
+  "Jira"
 ];
 
 export default function Skills() {
