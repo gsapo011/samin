@@ -38,7 +38,7 @@ const workExperienceData: WorkItem[] = [
     {
     year: "2026 - Present",
     company: "Psyche's Royale Gaming",
-    role: "Software Tester",
+    role: "Test Team Lead & Software Tester",
     details: "Perform manual testing of games, applications, and websites to identify bugs, verify functionality, and ensure quality across different platforms. Conduct automated testing and develop test automation to improve testing efficiency and reliability. Work with production systems to investigate issues, validate functionality, and support software quality assurance. Apply analytical, problem-solving, and technical skills through hands-on experience in both manual and automated testing.",
   },
   {
